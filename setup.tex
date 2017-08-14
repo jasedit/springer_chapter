@@ -1,0 +1,69 @@
+% Based on the template provided by Springer
+% Modified for scriptorium by Jason <jpz@vt.edu>
+
+\documentclass{svmult}
+
+\usepackage{mathptmx}       % selects Times Roman as basic font
+\usepackage{helvet}         % selects Helvetica as sans-serif font
+\usepackage{courier}        % selects Courier as typewriter font
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+%
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+\usepackage[round, longnamesfirst, authoryear, sort]{natbib}
+\usepackage{epsfig}
+\usepackage{usnomencl}
+
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{booktabs}     % Better tables
+\usepackage{tabulary}     % Support longer table cells
+\usepackage{tablefootnote}
+\usepackage{accents}
+\usepackage{capt-of}
+\usepackage{xfrac}
+
+% Fix equation formatting
+\renewcommand\[{\begin{equation}}
+\renewcommand\]{\end{equation}}
+
+% see the list of further useful packages
+% in the Reference Guide
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title*{\mytitle}
+% Use \titlerunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\author{\myauthor}
+% Use \authorrunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\ifdefined\myaffiliations
+\institute{\myaffiliations}
+\fi
+%
+% Use the package "url.sty" to avoid
+% problems with special characters
+% used in your e-mail or web address
+%
+\maketitle
+
+\ifdefined\myabstract
+\abstract*{\input{\myabstract}}
+\abstract{\input{\myabstract}}
+\fi
