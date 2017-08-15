@@ -51,11 +51,13 @@
 \begin{document}
 
 \title*{\mytitle}
-% Use \titlerunning{Short Title} for an abbreviated version of
-% your contribution title if the original one is too long
+\ifdefined\myshorttitle
+\titlerunning{\myshorttitle}
+\fi
 \author{\myauthor}
-% Use \authorrunning{Short Title} for an abbreviated version of
-% your contribution title if the original one is too long
+\ifdefined\myshortauthor
+\authorrunning{\myshortauthor}
+\fi
 \ifdefined\myaffiliations
 \institute{\myaffiliations}
 \fi
