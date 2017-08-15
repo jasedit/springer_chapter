@@ -1,0 +1,21 @@
+% Bibliography
+
+\ifx\myacknowledgement\undefined
+\else
+\section*{Acknowledgements}
+
+\myacknowledgement
+
+\fi
+
+
+\ifx\bibliostyle\undefined
+  \bibliographystyle{apalike}
+\else
+  \bibliographystyle{\bibliostyle}
+\fi
+
+\ifx\bibliocommand\undefined
+\else
+  \bibliocommand
+\fi
